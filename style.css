@@ -1,0 +1,142 @@
+
+body{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.display-none{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px ;
+    transition: background-color 0.3s;
+    z-index: 99;
+}
+
+.scrolled {
+    background-color: #222;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;    
+}
+
+.nav-item a{
+    font-size: 18px;
+    transition:background-color 0.3s ;
+    padding: 5px;
+}
+
+.nav-item a:hover{
+    background-color: #555;
+    border-radius: 5px;
+}
+
+section{
+    /* margin-top: 40px; */
+    padding: 50px;
+}
+
+#home {
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+#about {
+    background-color: #eaeaea;
+    height: 100vh;
+}
+
+#services {
+    background-color: #d4d4d4;
+    height: 100vh;
+}
+
+#contact {
+    background-color: #c0c0c0;
+    height: 100vh;
+}
+
+
+.responsive-menu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15px;
+    width: 20px;
+    margin:10px 20px;
+}
+
+.responsive-menu span{
+    display: none;
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 100%;
+}
+
+.responsive-menu span:nth-child(1){
+    top: 0;
+}
+.responsive-menu span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+.responsive-menu span:nth-child(3){
+    bottom: 0;
+}
+
+.responsive-menu-content{
+    background-color: gray;
+    padding: 15px 5px;
+    transition: display 0.3s;
+}
+
+.responsive-menu-content a{
+    transition: background-color 0.3s;
+    padding: 5px;
+}
+
+.responsive-menu-content a:hover{
+    background-color: #999;
+    border-radius: 5px;
+}
+
+.responsive-menu-content li{
+    padding: 10px 0;
+}
+
+@media screen and (max-width : 500px){
+    .navbar{
+        display: none;
+    }
+    .responsive-menu span{
+        display: block;
+    }
+}
