@@ -1,0 +1,1 @@
+This project showcases a responsive web page built using HTML, CSS, and JavaScript as part of the Prodigy InfoTech Web Development Intern. The page demonstrates essential web development skills, including layout design, styling, and basic interactivity. The goal was to create a modern, user-friendly interface with clean code and a focus on best practices in web design.
